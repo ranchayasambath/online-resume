@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    font-size: .8em;
+}
+body{
+    font-family: Helvetica;
+    background-color:#E9ECEF;
+}
+.iconify-inline{
+    margin: 1em;
+}
+header>h1 {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 3em;
+    color:slategray;
+    font-family: Rockwell;
+    margin: 1em 0 0 0;
+}
+.jobDescription {
+    text-align: center;
+    border-radius: 20px;
+    font-family: Futura;
+    color: lightseagreen;
+
+}
+.aboutME {
+    display: flex;
+    text-align: center;
+    font-size: 1em;
+    justify-content: center;
+    padding: 1em;
+    background-color: white;
+    border-radius: 20px;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em ;
+    background-color: white;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+.leftContent {
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 20px;
+}
+.rightContent {
+    background-color: slategray;
+    border-radius: 20px;
+    padding: 1em;
+    color: white;
+    margin-top: 1em;
+
+}
+ul>li{
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 400px){
+    .leftContent {
+        padding: 1em;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
