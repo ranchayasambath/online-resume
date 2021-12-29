@@ -119,29 +119,29 @@
     <nav class="nav-link">
         <ul>
             <li class="nav-item">
-                <div class="nav-container">
-                    <a href="tel:409-256-4044"><span class="iconify-inline" data-icon="el:phone-alt" data-width="25" data-height="25"></span></a>
+                <div class="nav-container" onclick="location.href='tel:409-256-4044';" style="cursor: pointer;">
+                   <span class="iconify-inline" data-icon="el:phone-alt" data-width="25" data-height="25"></span></a>
                 </div>
             </li>
             <li class="nav-item">
-                <div class="nav-container">
-                    <a href="mailto:ranchayasambath@gmail.com"><span class="iconify-inline" data-icon="logos:google-gmail" data-width="25" data-height="25"></span></a>
+                <div class="nav-container" onclick="location.href='mailto:ranchayasambath@gmail.com';" style="cursor: pointer;">
+                    <span class="iconify-inline" data-icon="logos:google-gmail" data-width="25" data-height="25"></span></a>
                 </div>
             </li>
             <li class="nav-item">
-                <div class="nav-container">
-                    <a href="https://www.linkedin.com/in/ranchaya-sambath-1a3928180/"><span class="iconify-inline" data-icon="logos:linkedin-icon" data-width="25" data-height="25"></span></a>
+                <div class="nav-container"  onclick="location.href='https://www.linkedin.com/in/ranchaya-sambath-1a3928180/';" style="cursor: pointer;">
+                    <span class="iconify-inline" data-icon="logos:linkedin-icon" data-width="25" data-height="25"></span></a>
                 </div>
             </li>
-            <li class="nav-item">
-                <div class="nav-container">
-                    <a href="https://github.com/ranchayasambath"><span class="iconify-inline" data-icon="icon-park:github" data-width="25" data-height="25"></span></a>
+            <li class="nav-item" >
+                <div class="nav-container" onclick="location.href='https://github.com/ranchayasambath';" style="cursor: pointer;">
+                    <span class="iconify-inline" data-icon="icon-park:github" data-width="25" data-height="25"></span></a>
                 </div>
             </li>
         </ul>
     </nav>
     <div class="information">
-        <div class="skill card">
+        <div class="skill card" id="skill">
             <h3 class="card-title">Skills</h3>
             <hr>
         <ul class="card-description">
@@ -158,7 +158,7 @@
             <li>C++</li>
         </ul>
         </div>
-        <div class="exp card">
+        <div class="exp card" id="exp">
             <h3 class="card-title">Professional Experience</h3>
             <hr>
             <h4 class="card-title">Military</h4>
@@ -171,7 +171,7 @@
             <p class="description">Computer repair technician. Dismantle and perform diagnostics on computer hardware, replace parts as necessary while maintaining detail list of ordered parts and parts being replaced.
             </p>
             </div>
-        <div class="dev card">
+        <div class="dev card" id="dev">
             <h3 class="card-title">Development Experience</h3>
             <hr>
             <h4 class="card-title">Upcoming project</h4>
@@ -188,7 +188,7 @@
                     Accusantium, quo.
                 </p>
         </div>
-        <div class="academic card">
+        <div class="academic card" id="academic">
             <h3 class="card-title">Academic Background</h3>
             <hr>
             <h4 class="card-title">CodeUp</h4>
@@ -200,7 +200,7 @@
         </div>
     </div>
 </div>
-<a class="nav-item" href="#top"> Back to top</a>
+<a id="returnTop" href="#top"> Back to top</a>
 </body>
 </html>
 

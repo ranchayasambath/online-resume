@@ -148,29 +148,36 @@
 /*----------------------------------------------------------------------------------------*/
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 .resume{
+
     padding: 1em;
     background-color: lightgray;
 }
 header{
+    margin: 1em;
     background-color: white;
     border-radius: 1em;
     text-align: center;
 }
 header>h1{
+    margin: 1em;
     padding: .5em 0 0 0;
+}
+header>h2{
+    margin: 1em;
 }
 header>p{
     padding: 1em;
 }
 nav>ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .nav-item{
     display: flex;
-    background-color: white;
+    background-color: #e9ecef;
     flex-basis: 20%;
     margin: .5em;
     text-align: center;
@@ -183,35 +190,48 @@ nav>ul{
 }
 .nav-item:hover .nav-container {
     flex-basis: 100%;
-    background: #e9ecef;
+    background: white;
     border-radius: 1em;
     transition: background-color 500ms ;
     transition-timing-function: ease-in-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 5px 25px 0 rgba(0, 0, 0, 0.20);
 }
 .card {
     flex-basis: 24%;
-
-    margin: 20px 0 0 0;
-    padding: 20px;
-    background: whitesmoke;
+    margin: 1em;
+    padding: 1em;
+    background: white;
     transition: box-shadow 500ms;
     border-radius: 1em;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-basis: 100%;
+    background: white;
+    border-radius: 1em;
+    transition: background-color 500ms ;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5), 0 5px 25px 0 rgba(0, 0, 0, 0.20);
 }
 .nameBox:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-basis: 100%;
+    background: white ;
+    border-radius: 1em;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5), 0 5px 25px 0 rgba(0, 0, 0, 0.20);
 }
 
 /* 601 to 1400 */
-@media only screen and (min-width: 601px) and (max-width: 1400px) {
-    .card { flex-basis: 49%; }
+@media only screen and (min-width: 601px)  {
+    #returnTop {
+        display: none;
+    }
 }
 
 /* 0 to 600 */
 @media only screen and (max-width: 600px) {
-    .nav-link ul{ flex-direction: column; }
-    .card { flex-basis: 100%; }
+    .nav-link>ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
